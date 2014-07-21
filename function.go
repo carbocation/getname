@@ -6,6 +6,6 @@ import (
 )
 
 // See http://stackoverflow.com/a/7053871/199475
-func GetFunctionName(i interface{}) string {
+func Function(i interface{}) string {
 	return runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()
 }
